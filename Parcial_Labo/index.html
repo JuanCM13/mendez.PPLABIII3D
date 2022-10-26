@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/tablaDinamica.css">
+    <script src="./JS/app.js" type="module" defer></script>
+    <title>Autos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="aClass">Nosotros</a>
+            <a href="" class="aClass">Anuncios</a>
+            <a href="" class="aClass">Blog</a>
+            <a href="" class="aClass">Contacto</a>
+        </nav>
+        <h1 id="adminId">Administracion</h1>
+        <img src="https://fotoautos.com.ar/wp-content/uploads/2021/03/foto-autos.jpg" alt="Imagen autos..">
+    </header>
+    <body>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Informacion del Anuncio</legend>
+                    <label for="txtTitle">Titulo</label><br>
+                    <input type="text" name="Titulo" id="txtTulo">
+                    <small></small><br><br>
+
+                    <Label>Transaccion</Label><br>
+                    <label id="radioB">Venta</label><input type="radio" name="Transaccion" value="venta">
+                    <label id="radioB">Alquiler</label><input type="radio" name="Transaccion" value="alquiler">
+                    <small></small><br>
+
+                    <label for="txtDescripcion">Descripcion</label><br>
+                    <input type="text" name="Descripcion" id="txtDescripcion">
+                    <small></small><br><br>
+
+                    <label for="txtPrecio">Precio</label><br>
+                    <input type="number" name="Precio" id="txtPrecio" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189">
+                    <small></small><br>
+
+                    <input type="number" name="Puertas" id="txtPuertas" placeholder="Puertas" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" min="1" max="4">
+                    <small></small><br>
+
+                    <input type="number" name="Kilometros" id="txtKms" placeholder="KMs" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" min="0" max="200000">
+                    <small></small><br>
+
+                    <input type="number" name="Potencia" id="txtPotencia" placeholder="Potencia" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" min="50" max="300">
+                    <small></small><br>
+                </fieldset>
+            </form><br>
+            <button>Guardar</button>
+            <button hidden>Borrar</button>
+            <button hidden>Cancelar</button>
+            <button hidden>Modificar</button>
+            <br><br><br>
+            <img hidden id="ruedaSpinner" class="spinner" 
+                src="https://static3.depositphotos.com/1003854/262/i/600/depositphotos_2622850-stock-photo-car-wheel-with-aluminum-rim.jpg" alt="" width="80px" height="80px">
+            <div class="divTabla">
+            </div>
+
+
+        </div>
+    </body>
+    <footer style="background-color: blue;">
+        <a href="" class="aClass">Nosotros</a>
+        <a href="" class="aClass">Anuncios</a>
+        <a href="" class="aClass">Blog</a>
+        <a href="" class="aClass">Contacto</a>
+    </footer>
+</body>
+</html>

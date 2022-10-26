@@ -1,0 +1,27 @@
+.divTabla > table{
+    margin: auto;
+}
+
+.gris{
+    background-color: grey;
+}
+
+.puntero{
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th{
+    background-color: indianred;
+    text-transform: capitalize;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
